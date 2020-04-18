@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="lil-mouthy.svg"
+   inkscape:version="1.1-dev (bc69992, 2020-04-15)"
+   id="svg1636"
+   version="1.1"
+   viewBox="0 0 11.445512 7.15029"
+   height="7.15029mm"
+   width="11.445512mm">
+  <defs
+     id="defs1630" />
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:window-height="977"
+     inkscape:window-width="1252"
+     showgrid="false"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="179.22666"
+     inkscape:cx="253.05789"
+     inkscape:zoom="0.35"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata1633">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-38.878434,-100.74628)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       style="display:inline;fill:#403217;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 38.878434,100.74628 c 0,0 7.397994,0.0975 11.445512,0.35635 -2.368007,2.47473 -3.080028,3.39755 -6.061354,6.79394 -2.90091,-3.41237 -5.384158,-7.15029 -5.384158,-7.15029 z"
+       id="path1241"
+       sodipodi:nodetypes="cccc"
+       inkscape:transform-center-x="-1.6763862"
+       inkscape:transform-center-y="0.62244986" />
+  </g>
+</svg>

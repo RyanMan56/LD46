@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="5.8101778mm"
+   height="54.448288mm"
+   viewBox="0 0 5.8101778 54.448288"
+   version="1.1"
+   id="svg6551"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="human-arm-back.svg">
+  <defs
+     id="defs6545" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-21.097966"
+     inkscape:cy="166.71572"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata6548">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(45.238419,-139.75205)">
+    <g
+       transform="translate(-176.43373,76.683155)"
+       style="display:inline;opacity:1"
+       id="g4180-5">
+      <path
+         sodipodi:nodetypes="cssssc"
+         inkscape:connector-curvature="0"
+         id="path4151-2"
+         d="m 135.39477,108.47222 c 1.21644,3.71951 2.04203,8.36008 1.3704,8.99099 -0.51338,0.48223 -2.23276,-2.38836 -3.34713,-3.78417 -0.48932,-0.61285 -1.75707,2.44926 -1.91546,1.44516 -0.41956,-2.65974 0.64005,-5.33437 1.23845,-6.86258 0.22003,-0.56196 1.66293,0.12656 2.65374,0.2106 z"
+         style="display:inline;opacity:1;fill:#f9cab9;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="csscc"
+         inkscape:connector-curvature="0"
+         id="path4109-7"
+         d="m 131.20736,65.865184 c 0.74144,-3.826534 4.3945,-3.676954 4.802,0.148841 0.71235,6.687906 1.33817,38.018705 -0.0933,42.635425 -0.22897,0.73845 -2.77796,-0.3784 -3.61962,-0.10975 -1.86014,-12.93522 -0.71262,-29.065336 -1.08906,-42.674516 z"
+         style="fill:#0c5a8c;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

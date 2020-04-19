@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16.656948mm"
+   height="61.701416mm"
+   viewBox="0 0 16.656948 61.701416"
+   version="1.1"
+   id="svg5405"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="human-torso.svg">
+  <defs
+     id="defs5399" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="153.27073"
+     inkscape:cy="-124.46892"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5402">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(261.57252,148.86856)">
+    <g
+       transform="translate(-388.06813,-188.49154)"
+       style="display:inline;opacity:1"
+       id="g5385">
+      <path
+         sodipodi:nodetypes="sssssss"
+         inkscape:connector-curvature="0"
+         id="path3920"
+         d="m 130.87426,43.141739 c 7.33142,-6.016366 11.54498,2.505163 11.4759,8.976883 -0.04,3.745209 -0.95434,4.482605 -3.8835,4.828671 -1.02635,0.121259 -0.29879,4.531603 -0.84036,4.289894 -0.96819,-0.432119 -4.69083,-2.047474 -6.04629,-2.725666 -0.55249,-0.276433 0.0796,-4.351787 -0.4079,-4.686145 -3.91051,-2.681943 -4.9407,-6.873591 -0.29785,-10.683637 z"
+         style="opacity:1;fill:#f9cab9;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="csssscc"
+         inkscape:connector-curvature="0"
+         id="path3922"
+         d="m 131.25354,54.607331 c 0.23212,-0.562598 1.05399,-1.527968 0.94907,-2.075344 -0.21954,-1.145369 -2.12511,-0.598806 -1.22008,-2.937725 0.50565,-1.306779 2.24608,0.444086 3.2769,0.0068 2.69385,-1.14277 3.22235,-4.82507 6.04776,-4.98249 0.69872,-0.03893 0.52064,-3.397442 -0.1714,-3.800939 -7.40833,-4.427407 -20.82532,4.184851 -8.88225,13.789698 z"
+         style="fill:#9c6a5b;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="csssssc"
+         inkscape:connector-curvature="0"
+         id="path4000"
+         d="m 131.34672,58.166293 c -1.61308,3.496881 -3.84188,5.600896 -3.66856,11.157014 0.22779,7.302229 -1.82799,25.108294 -0.30019,30.892833 0.54253,2.05411 3.8451,0.62573 8.59897,0.61422 2.86358,-0.007 6.94417,0.32764 6.99255,-0.0945 0.4042,-3.526634 0.17269,-27.380729 -1.03266,-32.034152 -2.60701,-10.064715 -6.41184,-8.658224 -10.59011,-10.535415 z"
+         style="fill:#a0d5f7;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

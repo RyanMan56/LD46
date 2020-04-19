@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="human.svg"
+   sodipodi:docname="rooms.svg"
    inkscape:version="1.1-dev (bc69992, 2020-04-15)"
    id="svg3352"
    version="1.1"
-   viewBox="0 0 23.815056 129.91463"
-   height="12.991464cm"
-   width="2.3815057cm">
+   viewBox="0 0 2301.5554 760.52579"
+   height="76.052582cm"
+   width="230.15555cm">
   <defs
      id="defs3346" />
   <sodipodi:namedview
@@ -28,8 +28,8 @@
      showgrid="false"
      inkscape:current-layer="g1096-9"
      inkscape:document-units="mm"
-     inkscape:cy="-300.82302"
-     inkscape:cx="927.26274"
+     inkscape:cy="1689.9027"
+     inkscape:cx="4673.5133"
      inkscape:zoom="0.13966905"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -50,8 +50,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     style="display:none"
-     transform="translate(-1223.5791,-1180.0137)"
+     transform="translate(-232.38363,-653.30084)"
      inkscape:label="Layer 3"
      id="layer3"
      inkscape:groupmode="layer">
@@ -64,8 +63,7 @@
        style="fill:#522f03;fill-opacity:1;stroke:#3c3933;stroke-width:2.08248;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
-     style="display:none"
-     transform="translate(-1223.5791,-1180.0137)"
+     transform="translate(-232.38363,-653.30084)"
      inkscape:label="Layer 2"
      id="layer2"
      inkscape:groupmode="layer">
@@ -249,8 +247,8 @@
     </g>
   </g>
   <g
-     transform="translate(-1336.4676,-1220.7706)"
-     style="display:inline;opacity:1"
+     transform="translate(-345.2721,-694.05775)"
+     style="display:none;opacity:1"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">

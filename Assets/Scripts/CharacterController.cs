@@ -42,8 +42,6 @@ public class CharacterController : MonoBehaviour
             if (hit.collider != null)
             {
                 float distance = Mathf.Abs(hit.point.y - rayStartPos.y);
-                Debug.Log($"{distance} {hit.collider.name}");
-                Debug.DrawRay(rayStartPos, -Vector2.up);
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             }
         }

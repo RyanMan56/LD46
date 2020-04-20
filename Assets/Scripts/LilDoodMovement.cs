@@ -10,6 +10,8 @@ public class LilDoodMovement : MonoBehaviour
     PolygonCollider2D polygonCollider;
     Pathfinding pathfinding;
     DudeNeeds dudeNeeds;
+    Vector2 currentRoom;
+    Vector2 target;
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +67,38 @@ public class LilDoodMovement : MonoBehaviour
                 JumpingDude();
                 timeTilJump = 1.0f;
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        string room = collision.name;
+
+        switch (room)
+        {
+            case "kitchen":
+                currentRoom = kitchen.position;
+                break;
+            case "livingRoom":
+                currentRoom = livingRoom.position;
+                break;
+            case "diningRoom":
+                currentRoom = diningRoom.position;
+                break;
+            case "bathroom":
+                currentRoom = bathroom.position;
+                break;
+            case "landing":
+                currentRoom = landing.position;
+                break;
+            case "bedroom":
+                currentRoom = bedroom.position;
+                break;
+            case "roofTerrace":
+                currentRoom = roofTerrace.position;
+                break;
+            default:
+                break;
         }
     }
 }

@@ -24,6 +24,18 @@ public class Room
         }
         return previousRooms;
     }
+
+    public ArrayList GetRoute()
+    {
+        ArrayList allPreviousRooms = GetAllPreviousRooms();
+        ArrayList route = new ArrayList();
+        for (int i = allPreviousRooms.Count - 2; i >= 0; i--)
+        {
+            route.Add(allPreviousRooms[i]);
+        }
+        route.Add(name);
+        return route;
+    }
 }
 
 public class Pathfinding : MonoBehaviour

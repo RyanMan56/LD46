@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LilDoodMovement : MonoBehaviour
+public class JerryMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     float timeTilJump = 1.0f;
     float jumpForce = 5.0f;
     PolygonCollider2D polygonCollider;
     Pathfinding pathfinding;
-    DudeNeeds dudeNeeds;
     Vector2 currentRoom;
-    public string currentRoomString = "kitchen";
+    string currentRoomString = "livingRoom";
     Vector2 target;
     ArrayList route = null;
     public Transform kitchen, livingRoom, diningRoom, bathroom, landing, bedroom, roofTerrace;
@@ -22,8 +21,7 @@ public class LilDoodMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         polygonCollider = GetComponent<PolygonCollider2D>();
-        pathfinding = GetComponent<Pathfinding>();        
-        dudeNeeds = GetComponent<DudeNeeds>();
+        pathfinding = GetComponent<Pathfinding>();
         SetRoute();
     }
 
@@ -47,15 +45,12 @@ public class LilDoodMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void FixedUpdate()
     {
-        if(!dudeNeeds.dead)
-        {
-            Movement();
-        }
+        Movement();
     }
 
     void JumpingDude()
@@ -116,7 +111,7 @@ public class LilDoodMovement : MonoBehaviour
             default:
                 break;
         }
-        
+
         if (currentRoomString == (string)route[0])
         {
             if (route.Count > 1)
@@ -132,7 +127,8 @@ public class LilDoodMovement : MonoBehaviour
             if ((string)route[0] == "landing")
             {
                 stairs.SendMessage("AddToStairMask", gameObject.layer);
-            } else if ((string)route[0] == "livingRoom")
+            }
+            else if ((string)route[0] == "livingRoom")
             {
                 stairs.SendMessage("RemoveFromStairMask", gameObject.layer);
             }

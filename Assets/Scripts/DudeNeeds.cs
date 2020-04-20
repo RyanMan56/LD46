@@ -85,12 +85,12 @@ public class DudeNeeds : MonoBehaviour
 
         growth += Time.fixedDeltaTime;
 
-        if (growth = 300)
+        if (growth >= 300)
         {
 
         }
 
-        Debug.Log($"Lil dood has {thirstiness} water. Lil dood has {photosynthesis} sun.");
+        //Debug.Log($"Lil dood has {thirstiness} water. Lil dood has {photosynthesis} sun.");
 
     }
 

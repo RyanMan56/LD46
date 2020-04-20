@@ -9,6 +9,7 @@ public class LilDoodMovement : MonoBehaviour
     float jumpForce = 5.0f;
     PolygonCollider2D polygonCollider;
     Pathfinding pathfinding;
+    DudeNeeds dudeNeeds;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,8 @@ public class LilDoodMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         polygonCollider = GetComponent<PolygonCollider2D>();
         pathfinding = GetComponent<Pathfinding>();
-        Room path = pathfinding.Pathfind("bedroom", "diningRoom");        
+        Room path = pathfinding.Pathfind("bedroom", "diningRoom");
+        dudeNeeds = GetComponent<DudeNeeds>();
 
         string pathString = $"{path.name}, ";
         foreach (string currentRoom in path.GetAllPreviousRooms())
@@ -35,6 +37,19 @@ public class LilDoodMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(!dudeNeeds.dead)
+        {
+            Movement();
+        }
+    }
+
+    void JumpingDude()
+    {
+        rb.AddForce(new Vector2(1.0f, 2.0f) * jumpForce, ForceMode2D.Impulse);
+    }
+
+    void Movement()
+    {
         Vector2 rayStartPos = new Vector2(transform.position.x, transform.position.y - polygonCollider.bounds.extents.y);
         int doodMask = ~(1 << gameObject.layer);
         RaycastHit2D hit = Physics2D.Raycast(rayStartPos, -Vector2.up, 0.1f, doodMask);
@@ -51,10 +66,5 @@ public class LilDoodMovement : MonoBehaviour
                 timeTilJump = 1.0f;
             }
         }
-    }
-
-    void JumpingDude()
-    {
-        rb.AddForce(new Vector2(1.0f, 2.0f) * jumpForce, ForceMode2D.Impulse);
     }
 }

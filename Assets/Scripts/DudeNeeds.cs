@@ -9,6 +9,7 @@ public class DudeNeeds : MonoBehaviour
     float photosynthesis = 100;
     bool inTheSun;
     public bool dead = false;
+    float growth = 0;
     
 
     // Start is called before the first frame update
@@ -82,6 +83,13 @@ public class DudeNeeds : MonoBehaviour
             
         }
 
+        growth += Time.fixedDeltaTime;
+
+        if (growth = 300)
+        {
+
+        }
+
         Debug.Log($"Lil dood has {thirstiness} water. Lil dood has {photosynthesis} sun.");
 
     }
@@ -94,5 +102,10 @@ public class DudeNeeds : MonoBehaviour
     private void PlantInSun()
     {
         inTheSun = true;
+    }
+
+    private void Grow()
+    {
+
     }
 }

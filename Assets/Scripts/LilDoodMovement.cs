@@ -9,6 +9,9 @@ public class LilDoodMovement : MonoBehaviour
     float jumpForce = 5.0f;
     PolygonCollider2D polygonCollider;
     Pathfinding pathfinding;
+    DudeNeeds dudeNeeds;
+    Vector2 currentRoom;
+    Vector2 target;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +19,8 @@ public class LilDoodMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         polygonCollider = GetComponent<PolygonCollider2D>();
         pathfinding = GetComponent<Pathfinding>();
-        Room path = pathfinding.Pathfind("bedroom", "diningRoom");        
+        Room path = pathfinding.Pathfind("bedroom", "diningRoom");
+        dudeNeeds = GetComponent<DudeNeeds>();
 
         string pathString = $"{path.name}, ";
         foreach (string currentRoom in path.GetAllPreviousRooms())
@@ -34,6 +38,19 @@ public class LilDoodMovement : MonoBehaviour
     }
 
     private void FixedUpdate()
+    {
+        if(!dudeNeeds.dead)
+        {
+            Movement();
+        }
+    }
+
+    void JumpingDude()
+    {
+        rb.AddForce(new Vector2(1.0f, 2.0f) * jumpForce, ForceMode2D.Impulse);
+    }
+
+    void Movement()
     {
         Vector2 rayStartPos = new Vector2(transform.position.x, transform.position.y - polygonCollider.bounds.extents.y);
         int doodMask = ~(1 << gameObject.layer);
@@ -53,8 +70,35 @@ public class LilDoodMovement : MonoBehaviour
         }
     }
 
-    void JumpingDude()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        rb.AddForce(new Vector2(1.0f, 2.0f) * jumpForce, ForceMode2D.Impulse);
+        string room = collision.name;
+
+        switch (room)
+        {
+            case "kitchen":
+                currentRoom = kitchen.position;
+                break;
+            case "livingRoom":
+                currentRoom = livingRoom.position;
+                break;
+            case "diningRoom":
+                currentRoom = diningRoom.position;
+                break;
+            case "bathroom":
+                currentRoom = bathroom.position;
+                break;
+            case "landing":
+                currentRoom = landing.position;
+                break;
+            case "bedroom":
+                currentRoom = bedroom.position;
+                break;
+            case "roofTerrace":
+                currentRoom = roofTerrace.position;
+                break;
+            default:
+                break;
+        }
     }
 }

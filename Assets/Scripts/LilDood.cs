@@ -27,12 +27,10 @@ public class LilDood : MonoBehaviour
         timeTilJump -= Time.fixedDeltaTime;
 
         Vector2 rayStartPos = new Vector2(transform.position.x, transform.position.y - polygonCollider.bounds.extents.y);
-        Debug.DrawRay(rayStartPos, -Vector2.up);
         int doodMask = ~(1 << LayerMask.NameToLayer("Dood"));
         RaycastHit2D hit = Physics2D.Raycast(rayStartPos, -Vector2.up, 0.1f, doodMask);
 
         float distance = Mathf.Abs(hit.point.y - rayStartPos.y);
-        Debug.Log(distance);
 
         if (timeTilJump <= 0 && hit.collider != null)
         {

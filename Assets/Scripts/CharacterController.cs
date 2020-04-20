@@ -32,6 +32,7 @@ public class CharacterController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Debug.Log(rb.velocity.y);
         animator.SetFloat("vertical speed", rb.velocity.y);
         if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space)) && rb.velocity.y <= 0.0f)
         {

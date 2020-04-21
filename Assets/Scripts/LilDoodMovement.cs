@@ -16,10 +16,14 @@ public class LilDoodMovement : MonoBehaviour
     ArrayList route = null;
     public Transform kitchen, livingRoom, diningRoom, bathroom, landing, bedroom, roofTerrace;
     public Stairs stairs;
+    public AudioSource jumpSound;
+    public Transform defaultParent;
+    bool beingCarried;
 
     // Start is called before the first frame update
     void Start()
     {
+        defaultParent = transform.parent;
         rb = GetComponent<Rigidbody2D>();
         polygonCollider = GetComponent<PolygonCollider2D>();
         pathfinding = GetComponent<Pathfinding>();        
@@ -31,7 +35,6 @@ public class LilDoodMovement : MonoBehaviour
     {
         route = pathfinding.Pathfind(GetRandomTarget(currentRoomString), currentRoomString).GetRoute();
         SetTarget((string)route[0]);
-        PrintRoute();
     }
 
     void PrintRoute()
@@ -52,7 +55,7 @@ public class LilDoodMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(!dudeNeeds.dead)
+        if(!dudeNeeds.dead && dudeNeeds.isBorn && !beingCarried)
         {
             Movement();
         }
@@ -62,6 +65,7 @@ public class LilDoodMovement : MonoBehaviour
     {
         {
             rb.AddForce(new Vector2(1.0f * target.x < transform.position.x ? -1 : 1, 2.0f) * jumpForce, ForceMode2D.Impulse);
+            jumpSound.Play();
         }
     }
 
@@ -87,31 +91,40 @@ public class LilDoodMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        string room = collision.name;
-        currentRoomString = collision.name;
+        if (collision.name == "god-ray")
+        {
+            dudeNeeds.isPhotosynthesising = true;
+        }
 
-        switch (room)
+        switch (collision.name)
         {
             case "kitchen":
                 currentRoom = kitchen.position;
+                currentRoomString = collision.name;
                 break;
             case "livingRoom":
                 currentRoom = livingRoom.position;
+                currentRoomString = collision.name;
                 break;
             case "diningRoom":
                 currentRoom = diningRoom.position;
+                currentRoomString = collision.name;
                 break;
             case "bathroom":
                 currentRoom = bathroom.position;
+                currentRoomString = collision.name;
                 break;
             case "landing":
                 currentRoom = landing.position;
+                currentRoomString = collision.name;
                 break;
             case "bedroom":
                 currentRoom = bedroom.position;
+                currentRoomString = collision.name;
                 break;
             case "roofTerrace":
                 currentRoom = roofTerrace.position;
+                currentRoomString = collision.name;
                 break;
             default:
                 break;
@@ -136,6 +149,14 @@ public class LilDoodMovement : MonoBehaviour
             {
                 stairs.SendMessage("RemoveFromStairMask", gameObject.layer);
             }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name == "god-ray")
+        {
+            dudeNeeds.isPhotosynthesising = false;
         }
     }
 
@@ -207,5 +228,18 @@ public class LilDoodMovement : MonoBehaviour
         }
 
         return room;
+    }
+
+    public void OnCarry()
+    {
+        beingCarried = true;
+        rb.gravityScale = 0;
+    }
+
+    public void OnCarryEnd()
+    {
+        transform.parent = defaultParent;
+        beingCarried = false;
+        rb.gravityScale = 1.0f;
     }
 }

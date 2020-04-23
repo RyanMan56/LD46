@@ -5,7 +5,7 @@ using UnityEngine;
 public class Jerry : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private float upwardsForce = 7.0f;
+    private float upwardsForce = 8.0f;
 
     // Start is called before the first frame update
     void Start()

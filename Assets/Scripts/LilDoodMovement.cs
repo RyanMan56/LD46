@@ -16,9 +16,9 @@ public class LilDoodMovement : MonoBehaviour
     ArrayList route = null;
     public Transform kitchen, livingRoom, diningRoom, bathroom, landing, bedroom, roofTerrace;
     public Stairs stairs;
-    public AudioSource jumpSound;
     public Transform defaultParent;
     bool beingCarried;
+    public AudioSource boing;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +28,7 @@ public class LilDoodMovement : MonoBehaviour
         polygonCollider = GetComponent<PolygonCollider2D>();
         pathfinding = GetComponent<Pathfinding>();        
         dudeNeeds = GetComponent<DudeNeeds>();
+        boing = GetComponent<AudioSource>();
         SetRoute();
     }
 
@@ -65,7 +66,7 @@ public class LilDoodMovement : MonoBehaviour
     {
         {
             rb.AddForce(new Vector2(1.0f * target.x < transform.position.x ? -1 : 1, 2.0f) * jumpForce, ForceMode2D.Impulse);
-            jumpSound.Play();
+            boing.Play();
         }
     }
 

@@ -50,7 +50,7 @@ public class CharacterController : MonoBehaviour
         if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space)) && rb.velocity.y <= 0.0f)
         {
             Vector2 rayStartPos = new Vector2(transform.position.x + capsuleCollider.offset.x, transform.position.y - capsuleCollider.size.y / 2 + capsuleCollider.offset.y);
-            int playerMask = ~((1 << LayerMask.NameToLayer("Player")) | (1 << LayerMask.NameToLayer("Camera Trigger")));
+            int playerMask = ~((1 << LayerMask.NameToLayer("Player")) | (1 << LayerMask.NameToLayer("Camera Trigger")) | (1 << LayerMask.NameToLayer("God Ray")));
             RaycastHit2D hit = Physics2D.Raycast(rayStartPos, -Vector2.up, 0.01f, playerMask);
 
             if (hit.collider != null)

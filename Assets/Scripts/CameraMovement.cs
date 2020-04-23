@@ -29,6 +29,13 @@ public class CameraMovement : MonoBehaviour
 
             float distCovered = (Time.time - startTime.Value) * speed;
             float journeyLength = Vector2.Distance(startPos.Value, target.Value);
+            if (journeyLength == 0)
+            {
+                target = null;
+                startTime = null;
+                startPos = null;
+                return;
+            }
             float fractionOfJourney = distCovered / journeyLength;
 
             transform.position = Vector2.Lerp(startPos.Value, target.Value, fractionOfJourney);
@@ -44,8 +51,8 @@ public class CameraMovement : MonoBehaviour
 
     public void MoveCamera(string room)
     {
-        startPos = null;
-        startTime = null;
+        startPos = transform.position;
+        startTime = Time.time;
 
         switch (room)
         {
